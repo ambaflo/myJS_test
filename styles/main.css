@@ -7,3 +7,9 @@ h1{
     color: red;
     text-decoration-line: underline;
 }
+a.b1{
+    font-family: "Times New Roman";
+    text-transform: capitalize;
+    color: blue;
+    background-color: yellowgreen;
+}
