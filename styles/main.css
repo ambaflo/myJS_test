@@ -1,0 +1,9 @@
+h1{
+    /*font-family: Verdana;*/
+    font-family: FontAwesome;
+    /*font-variant-caps: titling-caps;*/
+    text-transform: uppercase;
+    /*font-size: larger;*/
+    color: red;
+    text-decoration-line: underline;
+}
