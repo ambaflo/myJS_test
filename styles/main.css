@@ -1,15 +1,7 @@
-h1{
-    /*font-family: Verdana;*/
-    font-family: FontAwesome;
-    /*font-variant-caps: titling-caps;*/
-    text-transform: uppercase;
-    /*font-size: larger;*/
-    color: red;
-    text-decoration-line: underline;
-}
-a.b1{
-    font-family: "Times New Roman";
-    text-transform: capitalize;
-    color: blue;
-    background-color: yellowgreen;
-}
+
+/*a.b1{*/
+    /*font-family: "Times New Roman";*/
+    /*text-transform: capitalize;*/
+    /*color: blue;*/
+    /*background-color: yellowgreen;*/
+/*}*/
