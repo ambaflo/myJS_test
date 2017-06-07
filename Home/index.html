@@ -6,54 +6,67 @@
     <!--<meta http-equiv="Refresh" content=""-->
     <!--<link href="../styles/main.css" rel="stylesheet">-->
     <!--<link href="../styles/navBar.css" rel="stylesheet">-->
-    <!--<link href="../styles/home.css" rel="stylesheet">-->
+    <link href="../styles/home.css" rel="stylesheet">
     <!--<script src="https://use.fontawesome.com/72a0922108.js"></script>-->
 
 </head>
 <body>
     <nav>
         <!--blue stripe-->
-        <section class=blueGreenSripe>
-            <!--SharepointLogo-->
-            <img src="..\images\SharePointLogo_Web.png"/><h3>Sharepoint</h3>
+        <section class=blueGreenStripe>
+            <!--<section class="sp">-->
+                <a class="sp" href="#">Sharepoint</a>
+                <!--<ul>-->
+                    <!--<li> &lt;!&ndash;SharepointLogo&ndash;&gt;-->
+                        <!--<img class='logo' src="..\images\SharePointLogo_Web.png"/></li>-->
+                    <!--<li class="txt">Sharepoint</li>-->
+                <!--</ul>-->
+            <!--</section>-->
+
+
+            <!--user bar-->
+            <!--<section class="userProfile"></section>-->
+                <ul class="userProfile">
+                    <li><a href="#">user name</a></li>
+                    <li><a href="#">dropDownMenu</a></li>
+                    <li><a href="#">preferences</a></li>
+                    <li><a href="#">help</a></li>
+
+                </ul>
+            <!--</section>-->
+
+            <!--<section class="userButtons">-->
             <!--right buttons-->
-            <ul class="b1">
+            <ul class="userButtons">
                 <li><a href="#mySites">my sites</a></li>
                 <li><a href="#Yammer">yammer</a></li>
                 <li><a href="#OneDrive">oneDrive</a></li>
                 <li><a href="#Sites">sites</a></li>
             </ul>
-            <!--user bar-->
-            <ul >
-                <li><a href="#">user name</a></li>
-                <li><a href="#">dropDownMenu</a></li>
-                <li><a href="#">preferences</a></li>
-                <li><a href="#">help</a></li>
-
-            </ul>
+            <!--</section>-->
         </section>
 
         <!--grey stripe-->
         <section class="greyStripe">
 
             <!--left buttons-->
-            <div class="navButtons">
+            <section class="navButtons">
                 <ul class="b2">
                     <li><a href="#browse">browse</a></li>
                     <li><a href="#files">files</a></li>
                     <li><a href="#Library">Library</a></li>
                 </ul>
-            </div>
+            </section>
 
             <!--right tools-->
-            <div class ="toolbox">
+            <section class ="toolbox">
                 <ul>
                     <li><a href="#">share</a></li>
                     <li><a href="#">follow</a></li>
                     <li><a href="#">edit</a></li>
                     <li><a href="#">full screen</a></li>
                 </ul>
-            </div>
+            </section>
         </section>
 
 
@@ -71,25 +84,39 @@
             <!--"19 countries" block-->
         </section>
         <aside>
-
-            <!--search form-->
-            <form action="#">
-                <input type="search"/>
-            </form>
-            <!--action buttons for current office-->
             <ul>
                 <li>
-                    <a href="#">movement request</a>
+                    <!--search form-->
+                    <form action="#">
+                        <input type="search by name or id number" placeholder="Search for a person"/>
+                    </form>
                 </li>
                 <li>
-                    <a href="#">look for available place</a>
+                    <!--action buttons for current office-->
+                    <ul>
+                        <li>
+                            <a href="#">movement request</a>
+                        </li>
+                        <li>
+                            <a href="#">look for available place</a>
+                        </li>
+                    </ul>
+                </li>
+                <li> <!--adress box-->
+
+                    <article>
+                        <header>
+                            <h1>My office</h1>
+                        </header>
+                        <!--current user info-->
+                    </article>
                 </li>
             </ul>
-            <!--adress box-->
-            <h5>My office</h5>
-            <div>
-                <!--current user info-->
-            </div>
+
+
+
+
+
         </aside>
         <section>
             <!--table with tabs-->
