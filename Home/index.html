@@ -3,51 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <!--<meta http-equiv="Refresh" content=""-->
-    <!--<link href="../styles/main.css" rel="stylesheet">-->
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../styles/home.css" rel="stylesheet">
-    <!--<script src="https://use.fontawesome.com/72a0922108.js"></script>-->
-
 </head>
 <body>
     <nav>
         <!--blue stripe-->
-        <section class=blueGreenStripe>
-            <!--<section class="sp">-->
-                <a class="sp" href="#">Sharepoint</a>
-                <!--<ul>-->
-                    <!--<li> &lt;!&ndash;SharepointLogo&ndash;&gt;-->
-                        <!--<img class='logo' src="..\images\SharePointLogo_Web.png"/></li>-->
-                    <!--<li class="txt">Sharepoint</li>-->
-                <!--</ul>-->
-            <!--</section>-->
-
-
-            <!--user bar-->
-            <!--<section class="userProfile"></section>-->
-                <ul class="userProfile">
-                    <li><a  class="ssp" href="#">user name</a></li>
-                    <li><a class="fa" href="#">&#xf107;</a></li>
-                    <li><a class="fa" href="#">&#xf013;</a></li>
-                    <!--<li><a class="fa-question-circle" href="#">&#xf059;</a></li>-->
-                    <li><a class="fa" href="#">&#xf059;</a></li>
-
-                </ul>
-            <!--</section>-->
-
-            <!--<section class="userButtons">-->
+        <section class=blueGreenStripe>		
+			<!--user bar-->
+			
+			<!--logo-->
+			<a class="sp" href="#">Sharepoint</a>
             <!--right buttons-->
-            <ul class="userButtons ">
+            <ul class="userProfile">
+                <li><a  class="ssp" href="#">user name</a></li>
+                <li><a class="fa" href="#">&#xf0dd;</a></li>
+                <li><a class="fa" href="#">&#xf013;</a></li>
+                <li><a class="fa" href="#">&#xf059;</a></li>
+            </ul>
+			<ul class="userButtons ">
                 <li><a href="#mySites">my sites</a></li>
                 <li><a href="#Yammer">yammer</a></li>
                 <li><a href="#OneDrive">oneDrive</a></li>
                 <li><a href="#Sites">sites</a></li>
             </ul>
-            <!--</section>-->
         </section>
-
+		
+		
+		
         <!--grey stripe-->
         <section class="greyStripe">
 
@@ -59,16 +43,24 @@
                     <li><a href="#Library">Library</a></li>
                 </ul>
             </section>
-
+            <!--resize button-->
+            
             <!--right tools-->
             <section class ="toolbox">
+			<a class="fa fa-arrows-alt resize" href="#"></a>
                 <ul>
-                    <li><a href="#">share</a></li>
-                    <li><a href="#">follow</a></li>
-                    <li><a href="#">edit</a></li>
-                    <li><a href="#">full screen</a></li>
+                    <li><i class="fa fa-share-alt"></i><a href="#">share</a></li>
+                    <li><i class="fa fa-star-o"></i><a href="#">follow</a></li>
+                    <li><i class="fa fa-pencil"></i><a href="#">edit</a></li>
+                    <!--<li><a class="fa" href="#">&#xf0b2;</a></li>-->
+                    <!--<li><a class="fa fa-share-alt" href="#">share</a></li>-->
+                    <!--<li><a class="fa fa-star-o" href="#">follow</a></li>-->
+                    <!--<li><a class="fa fa-pencil" href="#">edit</a></li>-->
+                    <!--<li><a class="fa fa-arrows-alt" href="#">full screen</a></li>-->
                 </ul>
             </section>
+
+
         </section>
 
 
@@ -76,9 +68,10 @@
     </nav>
 
     <header>
-        <!--<a href="https://www.epam-group.ru/"><img class="epamLogo" src="../images/EPAM_logo.svg" alt="epam systems"/></a>-->
+	<h1> Office space management portal</h1>
+        <a class="epamLogo" href="https://www.epam-group.ru/"><img  src="../images/EPAM_logo.svg" alt="epam systems"/></a>
         <!--логотип ссылка на главную сайта-->
-     <h1> Office space management portal</h1>
+     
     </header>
     <main>
         <section>
@@ -107,9 +100,9 @@
                 <li> <!--adress box-->
 
                     <article>
-                        <header>
-                            <h1>My office</h1>
-                        </header>
+                        
+                            <h2>My office</h2>
+                        
                         <!--current user info-->
                     </article>
                 </li>
