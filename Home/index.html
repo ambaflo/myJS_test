@@ -6,6 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../styles/home.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+			<script>$.noConflict();  jQuery( function($) {    $( "#tabs" ).tabs();  } );  </script>
 </head>
 <body>
     <nav>
@@ -22,14 +26,25 @@
                 <li><a class="fa" href="#">&#xf013;</a></li>
                 <li><a class="fa" href="#">&#xf059;</a></li>
             </ul>
-			<ul class="userButtons ">
+			<ul class="userButtons" id="hideTopnav">
+			<li ><a class="icon" href="javascript:void(0);" class="icon" onclick="menutoggle()">&#9776;</a></li>
                 <li><a href="#mySites">my sites</a></li>
                 <li><a href="#Yammer">yammer</a></li>
                 <li><a href="#OneDrive">oneDrive</a></li>
                 <li><a href="#Sites">sites</a></li>
+                
             </ul>
         </section>
-		
+		<script>
+		function menutoggle() {
+    var x = document.getElementById("hideTopnav");
+    if (x.className === "userButtons") {
+        x.className += " responsive";
+    } else {
+        x.className = "userButtons";
+    }
+}
+		</script>
 		
 		
         <!--grey stripe-->
@@ -41,6 +56,7 @@
                     <li><a href="#browse">browse</a></li>
                     <li><a href="#files">files</a></li>
                     <li><a href="#Library">Library</a></li>
+					
                 </ul>
             </section>
             <!--resize button-->
@@ -74,61 +90,68 @@
      
     </header>
     <main>
-        <section>
+        <section class="topmain">
+			<!--"19 countries" block-->
+			<section class="countries">
+				<section>
+					<span class="count">19</span>
+					<span class="counttext">Countries Worldwide</span>
+				</section>
+				<section class="textinfo">
+					<section>
+						<i class="fa fa-users" aria-hidden="true" ></i>
+						<span>15 000+</span>
+						<span>Employees</span>
+					</section>
+					<section>
+						<i class="fa fa-hourglass-o" aria-hidden="true"></i>
+						<span>30 Years</span>
+						<span>in Business</span>
+					</section>
+				</section>
+			</section>
             <!--map here-->
-            <!--"19 countries" block-->
+			<section class="bigmap">
+				<img  src="../images/sitemap.svg" alt="epam countrymap" />
+            </section>
+			
         </section>
+		<!-- undermap -->
         <aside>
-            <ul>
-                <li>
-                    <!--search form-->
-                    <form action="#">
-                        <input type="search" placeholder="Search for a person"/>
-                    </form>
-                </li>
-                <li>
-                    <!--action buttons for current office-->
-                    <ul>
-                        <li>
-                            <a href="#">movement request</a>
-                        </li>
-                        <li>
-                            <a href="#">look for available place</a>
-                        </li>
-                    </ul>
-                </li>
-                <li> <!--adress box-->
-
-                    <article>
-                        
-                            <h2>My office</h2>
-                        
+            <!--search form-->
+			<form action="#">
+				<input type="search" placeholder="Search for a person"/>
+			</form>
+			<!--action buttons for current office-->
+			<a href="#">movement request</a>
+			<a href="#">look for available place</a>
+			<article>
+				<h2>My office</h2>
                         <!--current user info-->
-                    </article>
-                </li>
-            </ul>
-
-
-
-
+			</article>
 
         </aside>
-        <section>
+        <section id="tabs">
             <!--table with tabs-->
             <ul>
-                <li>
-                    <a href="#">my requests</a>
-                    <!--e.g. DB query-->
-                </li>
-                <li>
-                    <a href="#">recently viewed units</a>
-                    <!--history log query-->
-                </li>
-                <li>
-                    <a href="#">my units</a>
-                    <!--selected by criteria-->
-                </li>
-            </ul>
+    <li><a href="#tabs-1"><strong>my requests</strong></a></li>
+    <li><a href="#tabs-2"><strong>recently viewed units</strong></a></li>
+    <li><a href="#tabs-3"><strong>my units</strong></a></li>
+				</ul>
+<article id="tabs-1">
+Тут можно положить первую таблицу
+</article>
+
+<article id="tabs-2">
+Содержимое второй вкладки
+</article>
+
+<article id="tabs-3">
+Содержимое третьей
+</article>
+
+			
+			
 
         </section>
 
