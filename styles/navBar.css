@@ -1,0 +1,173 @@
+
+body .fa {
+    /*noinspection CssNoGenericFontName*/
+    font-family: FontAwesome;
+}
+
+body .ssp {
+    /*noinspection CssNoGenericFontName*/
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+}
+.blueGreenStripe {
+       /*blue stripe style*/
+    background-color: #39c2d7;
+	
+}
+a.sp{
+	color: white;
+	display:inline-block;
+	padding:5px 0px 0px 22px;
+    /*some problems with txt baseline
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    height: 24px;
+    margin-left: 22px;
+    padding-top: 4px;
+    
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;*/
+}
+
+.sp:before{
+    content: url("../images/SharePointLogo_20x21.png");
+    margin-right: 8px;
+    /*line-height: 28px;*/
+    /*min-height: inherit;*/
+    /*align-content: center;*/
+    float: left;
+    /*position: relative;*/
+    /*vertical-align: baseline;*/
+    /*top: 4px;*/
+    /*margin: 4px 10px 4px 0px;*/
+}
+
+body > nav > .blueGreenStripe > .userButtons{
+	float:right;
+	    padding-top: 5px;
+ }
+body > nav > .blueGreenStripe > .userButtons>li{
+     display: inline-block;
+     padding: 0 5px;
+     /*noinspection CssNoGenericFontName*/
+     /*font-family: Oswald;*/
+     /*font-size: 12px;*/
+     /*text-align: center;*/
+     /*text-transform: capitalize;*/
+     /*color: white;*/
+
+ }
+body > nav > .blueGreenStripe > .userButtons>li>a{
+    /*noinspection CssNoGenericFontName*/
+    font-family: "Source Sans Pro";
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+
+}
+
+nav>.blueGreenStripe>.userProfile{
+    float:right;
+    background-color: #eeeeee;
+    padding: 0 5px;
+
+}
+body > nav > .blueGreenStripe > .userProfile> li{
+     float:left;
+     display: block;
+     line-height: 28px;
+     padding: 0 5px;
+     /*noinspection CssNoGenericFontName*/
+}
+
+body > nav > .blueGreenStripe > .userProfile> li>a{
+    /*noinspection CssNoGenericFontName*/
+    /*font-family: "Source Sans Pro";*/
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    color: darkslategray;
+}
+
+.greyStripe{
+    background-color: #eeeeee;
+   /* height: 32px;
+    position: relative;*/
+    padding: 0;
+    border:0;
+}
+body > nav > .greyStripe > .navButtons{
+    margin-left: 14px;
+    display: inline-block;
+	/*float: left;
+    height: inherit;*/
+    /*width: auto;*/
+}
+body > nav > .greyStripe > .navButtons li{
+    display: inline-block;
+    padding: 5px;
+}
+
+body > nav > .greyStripe > .navButtons a:hover{
+    color: white;
+    background-color: #39c2d7
+}
+
+body > nav > .greyStripe > .navButtons a{
+    border: 1px solid red;
+    /*noinspection CssNoGenericFontName*/
+    font-family: "Source Sans Pro";
+    font-size: 9px;
+    text-transform: uppercase;
+    color:darkslategray;
+    padding: 5px 8px;
+	    display: block;
+
+}
+body > nav > .blueGreenStripe > .userButtons > li:first-child {
+    display: none;
+}
+body > nav > .greyStripe > .toolbox ul{
+    display: inline-block;	
+}
+
+body > nav > .greyStripe > .toolbox{    
+    float: right;
+}
+body > nav > .greyStripe > .toolbox li{
+    
+    display: inline-block;
+    color: darkslategray;
+    padding: 5px 0;
+    /*text-align: center;*/
+    /*margin-left: 8px;*/
+}
+body > nav > .greyStripe > .toolbox li a {
+    /*noinspection CssNoGenericFontName*/
+    font-family: "Source Sans Pro";
+    font-size: 9px;
+    text-align: center;
+    text-transform: uppercase;
+    color: darkslategray;
+    /*margin-left: 8px;*/
+
+}
+body > nav > .greyStripe > .toolbox i {
+   font-size: 9px;
+    padding-right: 6px;
+    margin-left: 8px;
+}
+
+body>nav>.greyStripe> .toolbox> .resize{
+    float: right;
+    display: inline-block;
+    line-height: 32px;
+    /*vertical-align: middle;
+    text-align: center;*/
+    padding: 0 18px 0 28px;
+    color: darkslategray;
+    font-size: 9px;
+}

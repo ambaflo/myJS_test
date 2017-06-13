@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro');
+@import url(./navBar.css);
+
+body{
+    margin: 0;
+}
+
+img, form, a, input,ul{
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+header{
+	background-color:#464547;
+	display: -webkit-flex;
+    display: flex;
+	 width:100%;
+	    -webkit-align-items: center;
+    align-items: center;
+}
+header .epamLogo{
+	order: 1;
+	-webkit-order: 1;
+
+} 
+header .epamLogo img{
+	width:90px;
+	display: block;
+	padding: 15px 20px;
+}
+header h1{
+	order: 2;
+	-webkit-order: 2;
+	color: #7ae6f7;
+    margin: 0px;
+    padding: 13px 5px;
+    font-size: 18pt;
+    text-transform: uppercase;
+	display: inline-block;
+	font-family: oswald;
+}
+main{
+	margin-left:70px;
+}
+.topmain{
+	display: flex;
+	width:100%;
+	-webkit-align-items: flex-end;
+    align-items: flex-end;
+	margin-top: 30px;
+}
+.topmain .countries{
+	color:#e0e0e0;
+	font-family:Oswald;
+	
+	text-align: center;
+}
+.topmain .countries .count{
+	font-size:180pt;
+	line-height: 180pt;
+}
+.topmain .countries span{
+	display:block;
+	
+}
+.topmain .countries .counttext{
+	font-size:18pt;
+}
+.topmain .countries .textinfo section{
+	display:inline-block;
+	margin:10px;
+}
+.topmain .countries .textinfo i{
+	border: 1px solid #e0e0e0;
+	border-radius: 50%;
+    padding: 10px;
+}
+.topmain .bigmap{
+	width: 100%;
+	padding-right: 5%;
+}
+.topmain .bigmap img{
+	width:100%;
+}
+.topmain .bigmap .city1{
+	color:#3ac2d7;
+}
+#tabs{
+	margin-bottom:50px;
+}
+@media screen and (max-width: 480px) {
+	body > nav > .blueGreenStripe > .userButtons > li  {display: none;}
+	body > nav > .blueGreenStripe > .userButtons > li:first-child{
+    display: block;
+  }
+	body > nav > .blueGreenStripe > .userButtons.responsive {position: relative;}
+	body > nav > .blueGreenStripe > .userButtons.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+	body > nav > .blueGreenStripe > .userButtons{
+		float:none;
+		padding: 5px 0px 5px 22px;
+		border-top: 1px solid white;
+	}
+	body > nav > .greyStripe > .toolbox{
+		text-align:right;
+	}
+	main{
+		    margin-left: 30px;
+	}
+	.topmain .bigmap{
+		display:none;
+	}
+}
+@media screen and (max-width: 320px){
+	header .epamLogo,body > nav > .greyStripe > .toolbox{
+		float:none;
+	}
+}
