@@ -3,159 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../styles/home.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-			<script>$.noConflict();  jQuery( function($) {    $( "#tabs" ).tabs();  } );  </script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>$.noConflict();
+    jQuery(function ($) {
+        $("#tabs").tabs();
+    });  </script>
 </head>
 <body>
-    <nav>
-        <!--blue stripe-->
-        <section class=blueGreenStripe>		
-			<!--user bar-->
-			
-			<!--logo-->
-			<a class="sp" href="#">Sharepoint</a>
-            <!--right buttons-->
-            <ul class="userProfile">
-                <li><a  class="ssp" href="#">user name</a></li>
-                <li><a class="fa" href="#">&#xf0dd;</a></li>
-                <li><a class="fa" href="#">&#xf013;</a></li>
-                <li><a class="fa" href="#">&#xf059;</a></li>
+<nav>
+    <!--blue stripe-->
+    <section class=blueGreenStripe>
+        <!--user bar-->
+
+        <!--logo-->
+        <a class="sp" href="#">Sharepoint</a>
+        <!--right buttons-->
+        <ul class="userProfile">
+            <li><a class="ssp" href="#">user name</a></li>
+            <li><a class="fa" href="#">&#xf0dd;</a></li>
+            <li><a class="fa" href="#">&#xf013;</a></li>
+            <li><a class="fa" href="#">&#xf059;</a></li>
+        </ul>
+        <ul class="userButtons" id="hideTopnav">
+            <li><a class="icon" href="javascript:void(0);" class="icon" onclick="menutoggle()">&#9776;</a></li>
+            <li><a href="#mySites">my sites</a></li>
+            <li><a href="#Yammer">yammer</a></li>
+            <li><a href="#OneDrive">oneDrive</a></li>
+            <li><a href="#Sites">sites</a></li>
+
+        </ul>
+    </section>
+    <script>
+        function menutoggle() {
+            var x = document.getElementById("hideTopnav");
+            if (x.className === "userButtons") {
+                x.className += " responsive";
+            } else {
+                x.className = "userButtons";
+            }
+        }
+    </script>
+
+
+    <!--grey stripe-->
+    <section class="greyStripe">
+
+        <!--left buttons-->
+        <section class="navButtons">
+            <ul>
+                <li><a href="#browse">browse</a></li>
+                <li><a href="#files">files</a></li>
+                <li><a href="#Library">Library</a></li>
+
             </ul>
-			<ul class="userButtons" id="hideTopnav">
-			<li ><a class="icon" href="javascript:void(0);" class="icon" onclick="menutoggle()">&#9776;</a></li>
-                <li><a href="#mySites">my sites</a></li>
-                <li><a href="#Yammer">yammer</a></li>
-                <li><a href="#OneDrive">oneDrive</a></li>
-                <li><a href="#Sites">sites</a></li>
-                
+        </section>
+        <!--resize button-->
+
+        <!--right tools-->
+        <section class="toolbox">
+            <a class="fa fa-arrows-alt resize" href="#"></a>
+            <ul>
+                <li><i class="fa fa-share-alt"></i><a href="#">share</a></li>
+                <li><i class="fa fa-star-o"></i><a href="#">follow</a></li>
+                <li><i class="fa fa-pencil"></i><a href="#">edit</a></li>
+                <!--<li><a class="fa" href="#">&#xf0b2;</a></li>-->
+                <!--<li><a class="fa fa-share-alt" href="#">share</a></li>-->
+                <!--<li><a class="fa fa-star-o" href="#">follow</a></li>-->
+                <!--<li><a class="fa fa-pencil" href="#">edit</a></li>-->
+                <!--<li><a class="fa fa-arrows-alt" href="#">full screen</a></li>-->
             </ul>
         </section>
-		<script>
-		function menutoggle() {
-    var x = document.getElementById("hideTopnav");
-    if (x.className === "userButtons") {
-        x.className += " responsive";
-    } else {
-        x.className = "userButtons";
-    }
-}
-		</script>
-		
-		
-        <!--grey stripe-->
-        <section class="greyStripe">
 
-            <!--left buttons-->
-            <section class="navButtons">
-                <ul>
-                    <li><a href="#browse">browse</a></li>
-                    <li><a href="#files">files</a></li>
-                    <li><a href="#Library">Library</a></li>
-					
-                </ul>
+
+    </section>
+
+
+</nav>
+
+<header>
+    <h1> Office space management portal</h1>
+    <a class="epamLogo" href="https://www.epam-group.ru/"><img src="../images/EPAM_logo.svg" alt="epam systems"/></a>
+    <!--логотип ссылка на главную сайта-->
+
+</header>
+<main>
+    <section class="topmain">
+        <!--"19 countries" block-->
+        <section class="countries">
+            <section>
+                <span class="count">19</span>
+                <span class="counttext">Countries Worldwide</span>
             </section>
-            <!--resize button-->
-            
-            <!--right tools-->
-            <section class ="toolbox">
-			<a class="fa fa-arrows-alt resize" href="#"></a>
-                <ul>
-                    <li><i class="fa fa-share-alt"></i><a href="#">share</a></li>
-                    <li><i class="fa fa-star-o"></i><a href="#">follow</a></li>
-                    <li><i class="fa fa-pencil"></i><a href="#">edit</a></li>
-                    <!--<li><a class="fa" href="#">&#xf0b2;</a></li>-->
-                    <!--<li><a class="fa fa-share-alt" href="#">share</a></li>-->
-                    <!--<li><a class="fa fa-star-o" href="#">follow</a></li>-->
-                    <!--<li><a class="fa fa-pencil" href="#">edit</a></li>-->
-                    <!--<li><a class="fa fa-arrows-alt" href="#">full screen</a></li>-->
-                </ul>
+            <section class="textinfo">
+                <section>
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span>15 000+</span>
+                    <span>Employees</span>
+                </section>
+                <section>
+                    <i class="fa fa-hourglass-o" aria-hidden="true"></i>
+                    <span>30 Years</span>
+                    <span>in Business</span>
+                </section>
             </section>
-
-
+        </section>
+        <!--map here-->
+        <section class="bigmap">
+            <img src="../images/sitemap.svg" alt="epam countrymap"/>
         </section>
 
-
-
-    </nav>
-
-    <header>
-	<h1> Office space management portal</h1>
-        <a class="epamLogo" href="https://www.epam-group.ru/"><img  src="../images/EPAM_logo.svg" alt="epam systems"/></a>
-        <!--логотип ссылка на главную сайта-->
-     
-    </header>
-    <main>
-        <section class="topmain">
-			<!--"19 countries" block-->
-			<section class="countries">
-				<section>
-					<span class="count">19</span>
-					<span class="counttext">Countries Worldwide</span>
-				</section>
-				<section class="textinfo">
-					<section>
-						<i class="fa fa-users" aria-hidden="true" ></i>
-						<span>15 000+</span>
-						<span>Employees</span>
-					</section>
-					<section>
-						<i class="fa fa-hourglass-o" aria-hidden="true"></i>
-						<span>30 Years</span>
-						<span>in Business</span>
-					</section>
-				</section>
-			</section>
-            <!--map here-->
-			<section class="bigmap">
-				<img  src="../images/sitemap.svg" alt="epam countrymap" />
-            </section>
-			
-        </section>
-		<!-- undermap -->
+    </section>
+    <section class="bottommain">
+        <!-- undermap -->
         <aside>
             <!--search form-->
-			<form action="#">
-				<input type="search" placeholder="Search for a person"/>
-			</form>
-			<!--action buttons for current office-->
-			<a href="#">movement request</a>
-			<a href="#">look for available place</a>
-			<article>
-				<h2>My office</h2>
-                        <!--current user info-->
-			</article>
+            <form class="search-person" action="#">
+                <input class="search" type="search" placeholder="Search for a person"/>
+            </form>
+            <!--action buttons for current office-->
+            <section class="buttons">
+                <a class="mrequest" href="#">movement request</a>
+                <a class="avalplace" href="#">look for available place</a>
+            </section>
+            <article class="personiInfo">
+                <h2>My office</h2>
+                <!--current user info-->
+
+            </article>
 
         </aside>
         <section id="tabs">
             <!--table with tabs-->
             <ul>
-    <li><a href="#tabs-1"><strong>my requests</strong></a></li>
-    <li><a href="#tabs-2"><strong>recently viewed units</strong></a></li>
-    <li><a href="#tabs-3"><strong>my units</strong></a></li>
-				</ul>
-<article id="tabs-1">
-Тут можно положить первую таблицу
-</article>
+                <li><a href="#tabs-1"><strong>my requests</strong></a></li>
+                <li><a href="#tabs-2"><strong>recently viewed units</strong></a></li>
+                <li><a href="#tabs-3"><strong>my units</strong></a></li>
+            </ul>
+            <article id="tabs-1">
+                Тут можно положить первую таблицу
+            </article>
 
-<article id="tabs-2">
-Содержимое второй вкладки
-</article>
+            <article id="tabs-2">
+                Содержимое второй вкладки
+            </article>
 
-<article id="tabs-3">
-Содержимое третьей
-</article>
+            <article id="tabs-3">
+                Содержимое третьей
+            </article>
 
-			
-			
 
         </section>
-
-    </main>
+    </section>
+</main>
 
 
 </body>

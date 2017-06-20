@@ -24,11 +24,11 @@ a.sp{
     position: absolute;
     height: 24px;
     margin-left: 22px;
-    padding-top: 4px;
+    padding-top: 4px;*/
     
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
-    text-transform: uppercase;*/
+    text-transform: uppercase;
 }
 
 .sp:before{
