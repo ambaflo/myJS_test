@@ -33,7 +33,7 @@ header h1{
 
 
 main{
-    margin-left:70px;
+    margin: 0 70px;
 }
 .topmain{
     display: flex;
@@ -42,9 +42,7 @@ main{
     align-items: flex-end;
     margin-top: 30px;
 }
-main{
-    margin: 0 70px;
-}
+
 .topmain{
     display: flex;
     width:100%;
@@ -56,7 +54,6 @@ main{
     color:#e0e0e0;
     /*noinspection CssNoGenericFontName*/
     font-family:Oswald;
-
     text-align: center;
 }
 .topmain .countries .count{
@@ -149,28 +146,19 @@ main{
 }
 .mrequest, .avalplace{
     display: flex;
+    display: -webkit-flex;
     align-items: center;
     text-transform:uppercase;
     text-align: center;
-    /*min-height: 60px;*/
-    line-height: 1;
-    color:#ffffff;
-    /*padding:20px 10px;*/
+    line-height: 1.2;
+    color: white;
+    padding:5px;
     flex: 1 40%;
+    /*noinspection CssNoGenericFontName*/
     font-family: Oswald;
     font-size: 18px;
-    /*padding: 15px 10px;*/
-    /*margin: auto;*/
-
 
 }
-/*.mrequest:before {*/
-    /*content: '\f0b2';*/
-    /*font-family: FontAwesome;*/
-    /*font-size: 30px;*/
-    /*padding: 15px 10px;*/
-/*}*/
-
 .mrequest{
     background:#a3c644;
     flex: 1 50%;
@@ -178,31 +166,100 @@ main{
 
 }
 
-/*.avalplace:before {*/
-    /*content: '\f0b2';*/
-    /*font-family: FontAwesome;*/
-    /*font-size: 30px;*/
-    /*padding: 15px 10px;*/
-/*}*/
 .avalplace{
     background:#937ebd;
     flex: 2 50%;
     margin:10px 0 0 2px ;
 }
 
+.bottommain .personInfo {
+
+    margin-top:5px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 1px solid #cccccc;
+
+}
+
 .bottommain  aside h2{
+
     width:100%;
     background:#999999;
     color:#ffffff;
     text-transform:uppercase;
+    font-family: Oswald;
     font-size: 16pt;
     text-align: center;
-    padding: 10px 0;
-    display: block;
+    margin: 0;
+    /*padding: 10px 0;*/
+    /*display: block;*/
+}
+
+.bottomain .adressInfo{
+    /*noinspection CssNoGenericFontName*/
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+    color: darkslategrey;
 }
 
 #tabs{
-    margin-bottom:50px;
+    padding:0;
+}
+.ui-tabs .ui-tabs-nav{
+    padding:0;
+    margin:0;
+}
+.ui-widget-header{
+    background:#3ac2d7;
+    border:none;
+}
+.ui-tabs .ui-tabs-nav li{
+    margin:0;
+    background:#3ac2d7;
+    border:none;
+
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{
+    color:#ffffff;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active{
+    margin:0;
+    padding:0;
+    background:#ffffff;
+    border-radius:0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+    color:#3ac2d7;
+}
+.ui-state-default a, .ui-state-default a:link{
+    margin:0;
+}
+.ui-tabs .ui-tabs-panel{
+    padding:0;
+}
+.tabsclass table{
+    width:100%;
+    border-collapse: collapse;
+}
+.tabsclass table thead tr th{
+    text-align: left;
+}
+.tabsclass table thead tr th a{
+    padding: 15px;
+    display: block;
+    border-bottom: 2px solid #d2d2d2;
+}
+.tabsclass table tbody tr:nth-child(2n+1){
+    background:#f5f5f5;
+}
+.tabsclass table tbody tr td{
+    padding: 15px;
+}
+.tabsclass table tbody tr td .rejected{
+    background:#b32746;
+    color:#ffffff;
+    padding:7px 12px ;
 }
 @media screen and (max-width: 480px) {
     body > nav > .blueGreenStripe > .userButtons > li  {display: none;}
